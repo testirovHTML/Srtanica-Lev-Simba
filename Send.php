@@ -7,7 +7,7 @@ if( !empty($_POST) ) {
         "\n" . "Сообщение: 
         \n " . $_POST['message'];
 
-        $sendMail = mail( "marina.perevozchikova.26@mail.ru", "Новое сообщение", $message );
+        $sendMail = mail( "perevozchikovamv@gmail.com", "Новое сообщение", $message );
         if( $sendMail ) {
             echo "Письмо успешно отправлено!";
 			echo "<br /><br /><a href='/'>Вернуться на сайт.</a>";
